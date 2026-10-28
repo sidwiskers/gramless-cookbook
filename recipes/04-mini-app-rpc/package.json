@@ -1,0 +1,8 @@
+{
+  "name": "recipe-mini-app-rpc",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "gramless": "^1.0.0"
+  }
+}

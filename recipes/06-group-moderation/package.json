@@ -1,0 +1,8 @@
+{
+  "name": "recipe-group-moderation",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "gramless": "^1.0.0"
+  }
+}

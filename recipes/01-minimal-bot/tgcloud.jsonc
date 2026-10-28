@@ -1,0 +1,5 @@
+{
+  "$schema": "https://tgcloud.ai/schema/tgcloud.json",
+  "name": "minimal-bot",
+  "version": "1.0.0"
+}

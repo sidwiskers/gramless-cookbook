@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Gramless Mini App RPC</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background: var(--tg-theme-bg-color, #ffffff);
+      color: var(--tg-theme-text-color, #222222);
+    }
+    .card {
+      background: var(--tg-theme-secondary-bg-color, #f4f4f5);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+    button {
+      width: 100%;
+      background: var(--tg-theme-button-color, #2481cc);
+      color: var(--tg-theme-button-text-color, #ffffff);
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+    .status {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    .leaderboard-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .leaderboard-list li {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+  <h2>Mini App RPC Demo</h2>
+  <div class="card">
+    <h3>Submit Score</h3>
+    <input type="number" id="scoreInput" placeholder="Enter score (e.g. 500)" min="1" max="1000000" />
+    <button id="submitBtn">Submit to TGCloud RPC</button>
+    <div id="submitStatus" class="status"></div>
+  </div>
+
+  <div class="card">
+    <h3>Top Leaderboard</h3>
+    <ul id="leaderboardList" class="leaderboard-list">
+      <li>Loading...</li>
+    </ul>
+    <button id="refreshBtn" style="margin-top: 12px;">Refresh</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

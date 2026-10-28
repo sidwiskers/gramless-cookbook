@@ -1,0 +1,6 @@
+{
+  "$schema": "https://tgcloud.ai/schema/tgcloud.json",
+  "name": "mini-app-rpc-demo",
+  "version": "1.0.0",
+  "static": "public"
+}

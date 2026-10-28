@@ -1,0 +1,5 @@
+{
+  "$schema": "https://tgcloud.ai/schema/tgcloud.json",
+  "name": "onboarding-wizard",
+  "version": "1.0.0"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "gramless-cookbook",
+  "version": "1.0.0",
+  "description": "Official production recipes, architectural patterns, and guides for Gramless on Telegram Serverless",
+  "type": "module",
+  "scripts": {
+    "test": "node --test recipes/07-lab-testing/tests/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sidwiskers/gramless-cookbook.git"
+  },
+  "keywords": [
+    "telegram",
+    "serverless",
+    "tgcloud",
+    "gramless",
+    "cookbook",
+    "bot",
+    "mini-app",
+    "recipes"
+  ],
+  "author": "sidwiskers",
+  "license": "MIT"
+}
