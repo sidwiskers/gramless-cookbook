@@ -1,6 +1,6 @@
 # Gramless Cookbook
 
-[![Gramless](https://img.shields.io/badge/framework-gramless%20v1.0-blue.svg)](https://github.com/sidwiskers/gramless)
+[![Gramless](https://img.shields.io/badge/framework-gramless%20v1.3+-blue.svg)](https://github.com/sidwiskers/gramless)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-success.svg)](package.json)
 [![Runtime](https://img.shields.io/badge/runtime-Telegram%20Serverless%20(V8)-orange.svg)](https://tgcloud.ai)
