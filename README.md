@@ -67,7 +67,7 @@ handlers/message.js   handlers/callback_query.js
 
 ---
 
-## The "Rules That Bite" Checklist
+## Important Runtime Constraints
 
 When developing for TGCloud, keep these five rules in mind to avoid deployment failures:
 
@@ -79,20 +79,26 @@ When developing for TGCloud, keep these five rules in mind to avoid deployment f
 
 ---
 
-## Deployment Quickstart
+## Deployment & Vendoring for TGCloud
 
-Install the official TGCloud command-line tool:
+TGCloud V8 isolates execute JavaScript files in `tgcloud/` directly without an npm runtime. To deploy:
 
+### Option A: Zero-Build Standalone Vendoring (Recommended)
+Vendor the self-contained Gramless bundle directly into `tgcloud/lib/`:
 ```bash
-npm install -g @tgcloud/cli
+npx gramless vendor
+```
+Then import natively with relative paths:
+```javascript
+import { createBot, session, Filter } from '../lib/gramless.js';
 ```
 
-Inside any recipe directory:
+### Option B: Bundler Workflow
+If you prefer standard npm specifiers (`import { createBot } from 'gramless'`), use a bundler (such as `esbuild` or `vite`) to generate flat JavaScript bundles in `tgcloud/` prior to deployment.
 
+### Deploying to TGCloud
+Deploy with the official TGCloud CLI:
 ```bash
-# Authenticate your terminal
-tgcloud login
-
 # Preview schema migrations and code diffs
 tgcloud diff
 
