@@ -3,6 +3,6 @@
   "version": "1.0.0",
   "type": "module",
   "dependencies": {
-    "gramless": "^1.0.0"
+    "gramless": "^1.6.0"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "name": "recipe-bot-settings-and-invites",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "gramless": "^1.6.0"
+  }
+}
