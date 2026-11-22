@@ -1,0 +1,12 @@
+{
+  "name": "recipe-10-fullstack-mini-app",
+  "version": "1.0.0",
+  "description": "Full-stack Telegram Mini App with Gramless client, Bot-side web_app_data, prepared inline message sharing, and CloudStorage",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test.js"
+  },
+  "dependencies": {
+    "gramless": "^1.6.0"
+  }
+}

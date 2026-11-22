@@ -24,6 +24,7 @@ Every recipe in this repository is a complete, self-contained, and runnable proj
 | [**07. Lab Testing**](recipes/07-lab-testing/) | Quality Assurance | Offline Testkit | Offline bot testing using Gramless Lab and `node:test`. Simulates users, clicks, and session mutations without network requests. |
 | [**08. Migration Guide**](recipes/08-migration-guide/) | Reference | Framework Transition | Side-by-side syntax mapping for developers migrating existing codebases from **grammY** or **Telegraf** to Gramless. |
 | [**09. Bot Settings & Invites**](recipes/09-bot-settings-and-invites/) | Configuration | Bot API 10.5 Features | Automated bot settings via `setMySettings`, `getMe`, topic sidebars, `callback_query_mode`, and dedicated onboarding invite links. |
+| [**10. Full-Stack Mini App**](recipes/10-fullstack-mini-app/) | Mini Apps | End-to-End TMA Suite | Complete Telegram Mini App with `gramless/client`, Bot-side `web_app_data`, prepared inline sharing, CloudStorage, and MenuButton. |
 
 ---
 
